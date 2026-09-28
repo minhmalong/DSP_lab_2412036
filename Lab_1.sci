@@ -30,7 +30,7 @@ endfunction
 yn = xd(n);
 
 delta = 0.1;
-yq=delta * fix(yn ./ delta);
+yq=delta * floor(yn ./ delta);
 
 subplot(3,1,1);
 plot(t, ya);
